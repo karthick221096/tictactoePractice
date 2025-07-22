@@ -12,7 +12,9 @@ public class Player {
     private PlayerType playerType;
     private String symbol;
 
-    public Player() {
-        this.playerType = PlayerType.HUMAN;
+    public Player(String name,PlayerType playerType, String symbol) {
+        this.playerType = playerType;
+        this.name = name;
+        this.symbol = symbol;
     }
 }

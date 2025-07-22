@@ -10,8 +10,8 @@ public class Bot extends Player{
 
     private BotDifficultyLevel difficulty;
 
-    public Bot() {
-        super();
-        this.difficulty = BotDifficultyLevel.EASY;
+    public Bot(String name, String symbol, BotDifficultyLevel difficulty) {
+        super(name,PlayerType.BOT,symbol);
+        this.difficulty = difficulty;
     }
 }
